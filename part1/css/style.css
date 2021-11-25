@@ -1,0 +1,53 @@
+/* 
+File: style.css
+GUI Assignment:  Creating an Interactive Dynamic Table using JQuery
+Dunia Seidu, UMass Lowell Computer Science Student, dunia_seidu@student.uml.edu 
+Copyright (c) 2021.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated on October 26, 2021 at 9:23 AM 
+Sources: https://www.w3schools.com/css/css_important.asp
+*/ 
+
+* {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* ensure background image does not distort in adjusting to webpage */
+body {
+    background-image: url('../img/original.gif'); /* image source: https://www.pinterest.at/pin/566749934359743337/ */
+    background-repeat:no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* aligned all the text in my tables to the center for a more consistent look, and made the tables reponsive using overflow-x*/
+table, td, th{
+    border: 3px solid black ;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    overflow-x:auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+
+
+button {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+

@@ -1,0 +1,86 @@
+<!-- 
+File: index.html 
+GUI Assignment:  Creating an Interactive Dynamic Table using JQuery
+Dunia Seidu, UMass Lowell Computer Science Student, dunia_seidu@student.uml.edu 
+Copyright (c) 2021.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated on November 23, 2021 at 9:23 AM 
+Sources: https://www.w3schools.com/html/
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- encode website for modern browsers-->
+    <meta charset="utf-8">
+    <title>Dunia's Dynamic Table Generator</title>
+    <!--local CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Latest compiled and minified CSS (Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    
+  </head>
+  <body>
+
+     <!--sectioned off different parts of my page using the navigation bar and targets for ease of use.-->
+    <h1>Dynamic Table Generator, Vers. 2</h1>
+
+    <h3 id= "smallheader">Please enter four values between -50 and 50 in the form below to generate a multiplication table.</h2>
+
+    <div id = "formsection" class="container">
+      <form name="inputvalues" id ="inputform" autocomplete="off" onsubmit="return false">
+          <b>Minimum Row Value</b>
+          <input type="text" id="min_row" name="minrowvalue" min="-50" max="50"/>
+          <br>
+          <br>
+          <b>Maximum Row Value</b>
+          <input type="text" id="max_row" name="maxrowvalue" min="-50" max="50"/>
+          <br>
+          <br>
+          <b>Minimum Column Value</b>
+          <input type="text" id="min_col" name="mincolvalue" min="-50" max="50"/>
+          <br>
+          <br>
+          <b>Maximum Column Value</b>
+          <input type="text" id="max_col" name="maxcolvalue" min="-50" max="50"/>
+          <br>
+          <br>
+
+          <input type="submit" name="Submit" onclick="createTable()"></button>
+       
+          <!-- <input type="button" id="submitButton" value = "GENERATE"> -->
+      </form>
+      <p id = "errormsg">
+
+      </p>
+  </div>
+
+  <!-- <button id = "genTable" type="submit" onclick="createTable()">Generate Table!</button> -->
+  
+  
+
+
+
+  <div class="scroll">
+    <!--use bootstrap CSS for readability-->
+    <table id ="mux_table" class = "table-striped table-hover">
+
+    </table>
+
+  </div>
+<!-- Latest compiled and minified JavaScript (Bootstrap)-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+<!--local JS file -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
